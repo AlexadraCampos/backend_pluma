@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 
 const corsOptions = {
-  origin: ['http://localhost:10000', 'http://localhost:5173','https://pluma-1.onrender.com', 'https://pluma-7rog.onrender.com'],
+  origin: ['http://localhost:10000', 'http://localhost:5173','https://pluma-1.onrender.com', 'https://backend-pluma.onrender.com'],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true

@@ -16,8 +16,7 @@ const client = new MongoClient(uri);
 
 //  Endpoint login - 
 router.post("/usuarios/Login", async (req, res) => {
-     console.log("🟢 passou aqui login");
- 
+     
   try {
     await client.connect();
     const db = client.db(dbName);
@@ -50,7 +49,7 @@ router.post("/usuarios/Login", async (req, res) => {
 
 // Endpoint Cadastro
 router.post("/usuarios/Cadastro", async (req, res) => {
-  console.log("🟢 passou aqui Cadastro!");
+ 
 
   try {
     await client.connect();
@@ -117,7 +116,7 @@ router.put("/Password", async (req, res) => {
 
 // Rota Listagem de Usuários
 router.get("/usuarios", async (req, res) => {
-  console.log("🟢 buscando usuários");
+  
  
   try {
     await client.connect();
